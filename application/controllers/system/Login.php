@@ -15,7 +15,7 @@ class Login extends MY_Controller
         $data = $this->system();
         $data += [
             "page_title"    => "Login",
-            "current_location"  => "login",
+            "current_location"  => "Login",
         ];
         $this->load->view('interface/system/Login', $data);
     }

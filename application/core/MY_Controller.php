@@ -93,7 +93,7 @@ class MY_Controller extends CI_Controller
         $defaultPassword = $this->session->schoolmis_change_password;
         $uri = $this->session->schoolmis_login_uri;
         $landing = $this->session->schoolmis_login_landing;
-        if (isset($this->session->schoolmis_login_id) && $this->uri->segment(1) == "" || $this->uri->segment(1) == "login" || $this->uri->segment(1) == "map") {
+        if (isset($this->session->schoolmis_login_id) && $this->uri->segment(1) == "" || $this->uri->segment(1) == "Login" || $this->uri->segment(1) == "map") {
             if ($level != "") {
                 if ($defaultPassword == 1) {
                     redirect(base_url('userpassword/changepassword'));
